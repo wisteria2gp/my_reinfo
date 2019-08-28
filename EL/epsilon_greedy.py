@@ -34,7 +34,6 @@ class CoinToss():
             self.toss_count += 1
             return reward, done
 
-
 class EpsilonGreedyAgent():
 
     def __init__(self, epsilon):
@@ -72,6 +71,7 @@ class EpsilonGreedyAgent():
 
 if __name__ == "__main__":
     import pandas as pd
+    import matplotlib
     import matplotlib.pyplot as plt
 
     def main():
@@ -90,6 +90,7 @@ if __name__ == "__main__":
         result["coin toss count"] = game_steps
         result = pd.DataFrame(result)
         result.set_index("coin toss count", drop=True, inplace=True)
+        print(result.head())
         result.plot.line(figsize=(10, 5))
         plt.show()
 

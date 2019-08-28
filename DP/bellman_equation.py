@@ -59,5 +59,14 @@ def transit_func(s, a):
 
 if __name__ == "__main__":
     print(V("state"))
+    print(V("state_up"))
     print(V("state_up_up"))
-    print(V("state_down_down"))
+    print(V("state_up_up_up"))
+    print(V("state_up_up_up_up"))
+    print(V("state_up_up_up_up_up"))
+    print(V("state_down"))
+    print(V("state_down_up"))
+    print(V("state_down_up_up"))
+    print(V("state_down_up_up_up"))
+    print(V("state_down_up_up_up_up"))
+    print(V("state_down_up_up_up_down"))

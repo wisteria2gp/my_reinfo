@@ -201,7 +201,8 @@ def main(play, is_test):
     else:
         trainer.train(obs, test_mode=is_test)
 
-
+#--testで学習したAgentを使うには--test --playとすること
+#--testで学習するとh5ファイルがdwn_agent_test.h5となるため
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="DQN Agent")
     parser.add_argument("--play", action="store_true",
